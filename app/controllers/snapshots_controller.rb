@@ -8,4 +8,20 @@ class SnapshotsController < ApplicationController
     @countdown_wait_ms = 1000
   end
 
+  def create
+    @snapshot = Snapshot.new(permitted_params)
+
+    if @snapshot.save
+      render json: @snapshot.to_json, status: :created
+    else
+      render json: { errors: @snapshot.errors.full_messages },
+        status: :unprocessable_entity
+    end
+  end
+
+private
+
+  def permitted_params
+    params.require(:snapshot).permit(:seconds)
+  end
 end
