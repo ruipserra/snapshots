@@ -1,0 +1,12 @@
+default: &default
+  min: 0
+  max: 10
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
