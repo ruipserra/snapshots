@@ -17,4 +17,28 @@ RSpec.feature "Snapshots", type: :feature do
     end
   end
 
+  context 'recording new snapshots', :js do
+    let(:add_btn) { find('.js-add-button') }
+
+    before do
+      visit '/'
+      record_ajax_requests
+    end
+
+    specify 'clicking the "Add" button creates a new snapshot in the database' do
+      expect do
+        add_btn.click
+        wait_for_ajax
+      end.to change(Snapshot, :count).by 1
+    end
+
+    specify 'clicking the "Add" updates the table' do
+      table = find('.js-snapshots-table')
+      expect do
+        add_btn.click
+        wait_for_ajax
+      end.to change { table.find('tbody > tr').size }.by 1
+    end
+  end
+
 end
