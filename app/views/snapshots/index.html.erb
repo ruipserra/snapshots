@@ -1,0 +1,17 @@
+<input type="text" readonly="true" value="<%= @countdown_value %>" class="js-countdown">
+<button class="js-add-button">Add</button>
+
+<table>
+  <theader>
+    <tr>
+      <th>Seconds<th>
+    </tr>
+  </theader>
+  <tbody>
+    <% @snapshots.each do |snapshot| %>
+      <tr>
+        <td><%= snapshot.seconds %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
