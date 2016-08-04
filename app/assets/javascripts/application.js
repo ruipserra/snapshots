@@ -11,4 +11,20 @@
 // about supported directives.
 //
 //= require vanilla-ujs
-//= require_tree .
+//= require_self
+//= require ./timer
+//= require ./table-updater
+//= require ./add-snapshot-button
+//= require ./snapshot
+//= require ./snapshots-index-page
+
+(function() {
+  'use strict';
+
+  // Namespace for application code
+  window.Snapshots = {};
+
+  document.addEventListener("DOMContentLoaded", function() {
+    new Snapshots.SnapshotsIndexPage();
+  });
+})();
