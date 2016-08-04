@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require vanilla-ujs
+//= require polyfills/es5
 //= require_self
 //= require ./timer
 //= require ./table-updater
