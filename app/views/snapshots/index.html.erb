@@ -8,7 +8,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @snapshots.each do |snapshot| %>
+    <% @snapshots.find_each do |snapshot| %>
       <tr>
         <td><%= snapshot.seconds %></td>
       </tr>
