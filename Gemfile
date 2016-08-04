@@ -7,6 +7,7 @@ gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'vanilla-ujs'
+gem 'rails-assets-polyfills', source: 'https://rails-assets.org'
 
 group :development, :test do
   gem 'pry-rails'
@@ -15,6 +16,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
 
 group :development do
