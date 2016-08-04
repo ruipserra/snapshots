@@ -1,12 +1,12 @@
 <input type="text" readonly="true" value="<%= @countdown_value %>" class="js-countdown" data-max-time="<%= @countdown_max %>" data-min-time="<%= @countdown_min %>" data-wait-ms="<%= @countdown_wait_ms %>">
 <button class="js-add-button">Add</button>
 
-<table>
-  <theader>
+<table class="js-snapshots-table">
+  <thead>
     <tr>
-      <th>Seconds<th>
+      <th>Seconds</th>
     </tr>
-  </theader>
+  </thead>
   <tbody>
     <% @snapshots.each do |snapshot| %>
       <tr>
