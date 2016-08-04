@@ -189,8 +189,8 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.0)
   rails (~> 5.0.0)
-  rails_12factor
   rails-assets-polyfills!
+  rails_12factor
   rspec-rails
   sqlite3
   tzinfo-data

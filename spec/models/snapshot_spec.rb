@@ -12,14 +12,14 @@ RSpec.describe Snapshot, type: :model do
     end
 
     describe 'when seconds is greater than the max countdown value' do
-      let(:attrs) { { seconds: Snapshot::MAX_VAL + 1 } }
+      let(:attrs) { { seconds: Countdown::MAX_VAL + 1 } }
       it 'is invalid' do
         expect(subject).not_to be_valid
       end
     end
 
     describe 'when seconds is less than the min countdown value' do
-      let(:attrs) { { seconds: Snapshot::MIN_VAL - 1 } }
+      let(:attrs) { { seconds: Countdown::MIN_VAL - 1 } }
       it 'is invalid' do
         expect(subject).not_to be_valid
       end

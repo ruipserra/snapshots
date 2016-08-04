@@ -1,13 +1,13 @@
 example_id                                   | status  | run_time        |
 -------------------------------------------- | ------- | --------------- |
-./spec/features/snapshots_spec.rb[1:1:1]     | passed  | 0.62409 seconds |
-./spec/features/snapshots_spec.rb[1:2:1]     | passed  | 3.38 seconds    |
-./spec/helpers/snapshots_helper_spec.rb[1:1] | pending | 0.00001 seconds |
-./spec/models/snapshot_spec.rb[1:1:1:1]      | passed  | 0.0027 seconds  |
-./spec/models/snapshot_spec.rb[1:1:2:1]      | passed  | 0.00336 seconds |
-./spec/models/snapshot_spec.rb[1:1:3:1]      | passed  | 0.02048 seconds |
-./spec/models/snapshot_spec.rb[1:1:4:1]      | passed  | 0.00391 seconds |
-./spec/requests/snapshots_spec.rb[1:1:1:1:1] | passed  | 0.02038 seconds |
-./spec/requests/snapshots_spec.rb[1:1:1:1:2] | passed  | 0.4996 seconds  |
-./spec/requests/snapshots_spec.rb[1:1:1:2:1] | passed  | 0.01548 seconds |
-./spec/requests/snapshots_spec.rb[1:1:1:2:2] | passed  | 0.02307 seconds |
+./spec/features/snapshots_spec.rb[1:1:1]     | passed  | 0.07224 seconds |
+./spec/features/snapshots_spec.rb[1:2:1]     | passed  | 4.04 seconds    |
+./spec/helpers/snapshots_helper_spec.rb[1:1] | pending | 0.00002 seconds |
+./spec/models/snapshot_spec.rb[1:1:1:1]      | passed  | 0.0038 seconds  |
+./spec/models/snapshot_spec.rb[1:1:2:1]      | passed  | 0.00486 seconds |
+./spec/models/snapshot_spec.rb[1:1:3:1]      | passed  | 0.00474 seconds |
+./spec/models/snapshot_spec.rb[1:1:4:1]      | passed  | 0.004 seconds   |
+./spec/requests/snapshots_spec.rb[1:1:1:1:1] | passed  | 0.03707 seconds |
+./spec/requests/snapshots_spec.rb[1:1:1:1:2] | passed  | 0.04107 seconds |
+./spec/requests/snapshots_spec.rb[1:1:1:2:1] | passed  | 0.01172 seconds |
+./spec/requests/snapshots_spec.rb[1:1:1:2:2] | passed  | 0.50359 seconds |

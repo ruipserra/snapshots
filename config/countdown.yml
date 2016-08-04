@@ -1,6 +1,7 @@
 default: &default
   min: 0
   max: 10
+  wait_ms: 1000
 
 development:
   <<: *default
